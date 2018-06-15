@@ -7,3 +7,6 @@
 build/
 
 .flutter-plugins
+/FlutterLab.iml
+/pubspec.lock
+/flutter_app_android.iml
