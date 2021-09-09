@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_app/entity/story.dart';
 import 'package:flutter_app/item/story_item.dart';
@@ -23,7 +21,7 @@ class StoryList extends State<HomeTab> {
     return new Scaffold(
       backgroundColor: new Color.fromARGB(255, 255, 255, 255),
       appBar: new AppBar(
-        centerTitle:true,
+        centerTitle: true,
         elevation: 0.0,
         title: new Text('标题',
             style: new TextStyle(fontSize: 18.0, color: Colors.black54)),
@@ -38,11 +36,12 @@ class StoryList extends State<HomeTab> {
                 onTap: () {
                   showDialog(
                       context: context,
-                      child: new AlertDialog(
+                      ch: new AlertDialog(
                           content: new Text(
                         "点击Item",
                         style: new TextStyle(fontSize: 20.0),
-                      )));
+                      )),
+                      builder: (BuildContext context) {});
                 },
                 child: new StoryListItem(story));
           }),

@@ -6,7 +6,7 @@ void main() => runApp(new MaterialApp(
     theme: new ThemeData(
       primaryIconTheme: const IconThemeData(color: Colors.white),
       brightness: Brightness.light,
-      primaryColor: new Color.fromARGB(255, 140, 204, 200),
+      primaryColor: Color.fromARGB(255, 140, 204, 200),
       accentColor: Colors.cyan[300],
     ),
     home: new SplashPage()));
